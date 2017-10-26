@@ -1,8 +1,3 @@
-
-# coding: utf-8
-
-# In[5]:
-
 import matplotlib.pyplot as plt
 import numpy as np
 img1 = plt.imread("image.jpg")
@@ -25,15 +20,9 @@ for i in range(img2.shape[0]):
         if n > threshold:
             img4[i,j] = 255
         else:
-            img4[i,j] = 255
+            img4[i,j] = 0
 plt.subplot(1,4,1), plt.imshow(img2)
 plt.subplot(1,4,2), plt.imshow(img3, plt.cm.gray)
 plt.subplot(1,4,3), plt.imshow(img4, plt.cm.gray)
 plt.subplot(1,4,4), plt.imshow(img4, plt.cm.binary)
 plt.show()
-
-
-# In[ ]:
-
-
-
