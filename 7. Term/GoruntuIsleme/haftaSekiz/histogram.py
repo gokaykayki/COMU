@@ -7,7 +7,7 @@ import numpy as np
 
 myNumbers = np.random.randint(0,2,10)
 myHistogram = {}
-myNumbers
+myNumbers # siyah beyaz resim olacak
 
 for number in myNumbers:
     if number in myHistogram.keys():
@@ -15,19 +15,6 @@ for number in myNumbers:
     else:
         myHistogram[number]=1
 myNumbers, myHistogram
-
-
-# In[95]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
+# histogram da iki değer olmalı
+# bunların oranı yazı-matbaa çıktısı için % kaçtır
 
