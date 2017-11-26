@@ -1,7 +1,4 @@
-
 # coding: utf-8
-
-# In[102]:
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -40,7 +37,7 @@ def myDilation(img1, mask):
 
 
 test = plt.imread("test.jpg")
-bw = np.zeros(img2.shape[0:2])
+bw = np.zeros(test.shape[0:2])
 
 threshold = 120
 for i in range(test.shape[0]):
@@ -56,9 +53,3 @@ plt.subplot(1,3,1), plt.imshow(test) #default image
 plt.subplot(1,3,2), plt.imshow(bw, plt.cm.binary) #bw image
 plt.subplot(1,3,3), plt.imshow(dilated, plt.cm.binary) #dilated image
 plt.show()
-
-
-# In[ ]:
-
-
-
