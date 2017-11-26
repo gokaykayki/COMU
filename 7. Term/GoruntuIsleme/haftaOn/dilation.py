@@ -49,7 +49,16 @@ for i in range(test.shape[0]):
             bw[i,j] = 255
 
 dilated = myDilation(bw,defineMask()) # print dilated image
-plt.subplot(1,3,1), plt.imshow(test) #default image
-plt.subplot(1,3,2), plt.imshow(bw, plt.cm.binary) #bw image
-plt.subplot(1,3,3), plt.imshow(dilated, plt.cm.binary) #dilated image
+plt.imshow(test) #default image
 plt.show()
+
+plt.imshow(bw, plt.cm.binary) #bw image
+plt.show()
+
+plt.imshow(dilated, plt.cm.binary) #dilated image
+plt.show()
+
+# plt.subplot(1,3,1), plt.imshow(test)
+# plt.subplot(1,3,2), plt.imshow(bw, plt.cm.binary) #bw image
+# plt.subplot(1,3,3), plt.imshow(dilated, plt.cm.binary) #dilated image
+# plt.show()
