@@ -1,8 +1,3 @@
-
-# coding: utf-8
-
-# In[32]:
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -29,14 +24,9 @@ for i in range(0,100):
 for i in range(100,200):
     for j in range(100,200):
         newCoords = np.dot(matrix,[i,j])
-        print (newCoords)
         bw[newCoords[0],newCoords[1]-100] = bw[i,j]
 
 plt.imshow(bw, plt.cm.binary)
 plt.show()
-
-
-# In[ ]:
-
 
 
