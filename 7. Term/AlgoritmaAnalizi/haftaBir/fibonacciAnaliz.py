@@ -27,8 +27,8 @@ def loopForRec(n):    ## 0-n arasıdaki fibonacci elemanlarını sıra sıra bul
     
 def fiboLoop(n): ##  n. fibonacci sayısını buluyor
     a=0
-    b=0
-    c=a
+    b=1
+    c=a+b
     if(n<2):
         return n
     while(n>0):
@@ -40,7 +40,7 @@ def fiboLoop(n): ##  n. fibonacci sayısını buluyor
 def loopForLoop(n): ## 0-n arasıdaki fibonacci elemanlarını sıra sıra buluyor
     for i in range(n):
         startTime = time.time()
-        fiboLoop(i)
+        print(fiboLoop(i))
         finishTime = time.time()
         processTime = finishTime - startTime
         print (i+1, " için:\n ----------------------")
@@ -52,10 +52,13 @@ def loopForLoop(n): ## 0-n arasıdaki fibonacci elemanlarını sıra sıra buluy
     plt.plot(x,y) 
     plt.show()
     
-n = 30  ## kaçıncı fibonacci elemanına kadar arayacağımızı giriyoruz
+n = 41  ## kaçıncı fibonacci elemanına kadar arayacağımızı giriyoruz
 
 loopForRec(n)  ## recursive şekilde hesaplıyor
-
 x = []  ## grafik eksenlerini sıfırlıyor
 y = []
 loopForLoop(n) ## lineer olarak hesaplıyor
+
+
+
+
