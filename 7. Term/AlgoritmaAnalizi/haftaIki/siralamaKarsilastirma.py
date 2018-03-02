@@ -1,8 +1,3 @@
-
-# coding: utf-8
-
-# In[12]:
-
 import random
 def bubbleSort(arr):
     bubbleSortCounter = 0;
@@ -20,6 +15,7 @@ def insertionSort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
         j = i-1
+        insertionSortCounter += 1
         while j >=0 and key < arr[j] :
             insertionSortCounter += 1
             arr[j+1] = arr[j]
@@ -37,18 +33,7 @@ nLengths = [10,20,30,50]
 for i in nLengths:
     print ("############### n = {}".format(i))
     for j in range(3):
-        print("--- {}. deneme".format(j))
+        print("--- {}. deneme".format(j+1))
         insertionSort(createRandomArray(i))
         bubbleSort(createRandomArray(i))
-        
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
+       
